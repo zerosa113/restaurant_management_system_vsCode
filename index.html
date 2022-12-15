@@ -13,21 +13,7 @@
 </head>
 
 <body>
-    <!-- <?php echo $i;?> php連接後端的語法 -->
-    <!-- Preloader -->
-    <div class="preloader-bg"></div>
-    <div id="preloader">
-        <div id="preloader-status">
-            <div class="preloader-position loader"> <span></span> </div>
-        </div>
-    </div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <!-- 右下角網頁進度條動畫 -->
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+    <!-- <?php echo $i;?> 為php連接後端的語法 -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -46,10 +32,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">關於</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> News <i class="ti-angle-down"></i></span>
                         <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="news2.html">News 2</a></li>
+                            <li class="dropdown-item"><a href="news.html">New</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
@@ -57,12 +43,11 @@
                         <ul class="dropdown-menu last">
                             <li class="dropdown-item"><a href="menu.html">Munu</a></li>
                             <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
-                            <li class="dropdown-item"><a href="room-details.html">Room Details</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Sign out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signOut.html">Sign out</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +55,7 @@
     <!-- Slider -->
     <header class="header slider-fade">
         <div class="owl-carousel owl-theme">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <!-- img slider 0 ~ 9 -->
             <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/2.jpg">
                 <div class="v-middle caption">
                     <div class="container">
@@ -83,10 +68,8 @@
                                     <i class="star-rating"></i>
                                     <i class="star-rating"></i>
                                 </span>
-                                <h4>Luxury Hotel & Best Resort</h4>
+                                <h4>Best Restaurant</h4>
                                 <h1>Enjoy a Luxury Experience</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Rooms &
-                                            Suites</span></a> </div>
                             </div>
                         </div>
                     </div>
@@ -106,8 +89,6 @@
                                 </span>
                                 <h4>Unique Place to Relax & Enjoy</h4>
                                 <h1>The Perfect Base For You</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Rooms &
-                                            Suites</span></a> </div>
                             </div>
                         </div>
                     </div>
@@ -127,8 +108,6 @@
                                 </span>
                                 <h4>The Ultimate Luxury Experience</h4>
                                 <h1>Enjoy The Best Moments of Life</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Rooms &
-                                            Suites</span></a> </div>
                             </div>
                         </div>
                     </div>
@@ -148,8 +127,8 @@
                         <i class="star-rating"></i>
                         <i class="star-rating"></i>
                     </span>
-                    <div class="section-subtitle">Restaurant</div>
-                    <div class="section-title">Enjoy a Luxury Experience</div>
+                    <div class="section-subtitle">享受奢華的一天</div>
+                    <div class="section-title">米奇零餐廳</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique illum pariatur
                         exercitationem culpa dignissimos aliquid unde harum neque omnis, distinctio modi qui provident
                         consequuntur autem ad hic incidunt atque.</p>
@@ -176,15 +155,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Our Services</div>
-                    <div class="section-title">Rrestaurant environment</div>
+                    <div class="section-subtitle">本餐廳提供服務</div>
+                    <div class="section-title">餐廳環境</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-world"></span>
-                        <h5>Take in</h5>
+                        <h5>內用</h5>
                         <p>We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.</p>
                         <div class="facility-shape"> <span class="flaticon-world"></span> </div>
                     </div>
@@ -192,7 +171,7 @@
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-car"></span>
-                        <h5>Parking</h5>
+                        <h5>停車場</h5>
                         <p>Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
                         <div class="facility-shape"> <span class="flaticon-car"></span> </div>
                     </div>
@@ -200,7 +179,7 @@
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-bed"></span>
-                        <h5>Take out</h5>
+                        <h5>外帶</h5>
                         <p>Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
                         <div class="facility-shape"> <span class="flaticon-bed"></span> </div>
                     </div>
@@ -208,7 +187,7 @@
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-wifi"></span>
-                        <h5>Fibre Internet</h5>
+                        <h5>Wifi</h5>
                         <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
                         <div class="facility-shape"> <span class="flaticon-wifi"></span> </div>
                     </div>
@@ -216,7 +195,7 @@
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-breakfast"></span>
-                        <h5>VISA card</h5>
+                        <h5>信用卡</h5>
                         <p>Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant</p>
                         <div class="facility-shape"> <span class="flaticon-breakfast"></span> </div>
                     </div>
