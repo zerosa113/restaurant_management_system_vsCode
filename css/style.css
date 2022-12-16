@@ -183,6 +183,11 @@ button:hover {
     border: 0px solid transparent;
 }
 
+.onclick-submit-sign:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 select {
     padding: 10px;
     border-radius: 5px;
@@ -941,6 +946,10 @@ blockquote cite:before {
     color: #aa8453 !important;
 }
 
+.nav-item-sign:hover {
+    background-color: #666;
+    color: #fff;
+}
 
 .nav-scroll {
     background: #fff;

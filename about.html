@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Restaurant Management System</title>
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/function/customerFunction.js" defer></script>
+    <script src="./js/customerManageSystem.js" defer></script>
+    <title>about</title>
 </head>
 
 <body>
@@ -46,22 +48,23 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown"> <span class="nav-link"> News <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="news.html">News</a></li>
-                            <li class="dropdown-item"><a href="post.html">Single Post</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
                         <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="menu.html">Munu</a></li>
+                            <li class="dropdown-item"><a href="menu.html">Menu</a></li>
                             <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signOut.html">Sign out</a></li>
+                    <li class="nav-item dropdown"> <span class="nav-link"> Member <i class="ti-angle-down"></i></span>
+                        <ul class="dropdown-menu last">
+                            <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
+                            <span id="logoutBtn">
+                                <li class="dropdown-item"><a href="index.html">Sign out</a></li>
+                            </span>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

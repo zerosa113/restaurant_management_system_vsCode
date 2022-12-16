@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Restaurant Management System</title>
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/function/customerFunction.js" defer></script>
+    <script src="./js/customerManageSystem.js" defer></script>
+    <script src="./js/login.js" defer></script>
+    <title>loginPage</title>
 </head>
 
 <body>
@@ -41,22 +44,23 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown"> <span class="nav-link"> News <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="news.html">News</a></li>
-                            <li class="dropdown-item"><a href="post.html">Single Post</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
                         <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="menu.html">Munu</a></li>
+                            <li class="dropdown-item"><a href="menu.html">Menu</a></li>
                             <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signOut.html">Sign out</a></li>
+                    <li class="nav-item dropdown"> <span class="nav-link"> Member <i class="ti-angle-down"></i></span>
+                        <ul class="dropdown-menu last">
+                            <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
+                            <span id="logoutBtn">
+                                <li class="dropdown-item"><a href="index.html">Sign out</a></li>
+                            </span>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -76,19 +80,28 @@
     <br>
     <br>
     <!-- 登入系統 -->
-    <div class="wrapa">
-        <fieldset class="fieldset">
-            <h3>請選擇註冊或是登入</h3>
+    <div class="wrap">
+        <fieldset>
+            <legend>登入資訊</legend>
             <br>
-            <form action="form.html">
-                <input type="account" name="account" class="account" placeholder="請輸入帳號">
+            <!-- required 必須填寫 -->
+            <!-- placeholder提示訊息 -->
+            <h3>帳號</h3>
+            <form action="/memberInformation.html" method="get">
+                <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
+                    aria-label="Text input with segmented dropdown button" required />
                 <br>
-                <input type="password" name="password" class="password" placeholder="請輸入密碼">
                 <br>
-                <div id="btn-log">
-                    <input type="button" value="註冊" class="signUp">
-                    <input type="button" value="登入" class="logIn">
-                </div>
+                <h3>密碼</h3>
+                <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
+                    aria-label="Text input with segmented dropdown button" required />
+                <br>
+                <br>
+                <input type="submit" id="loginBtn" value="登入" required />
+                <span class="border border-3">
+                    <li class="nav-item-sign"><a class="nav-link" href="signUp.html">點此註冊帳號</a></li>
+                </span>
+
             </form>
         </fieldset>
     </div>

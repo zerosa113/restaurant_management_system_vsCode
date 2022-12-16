@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Restaurant Management System</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/function/customerFunction.js" defer></script>
+    <script src="./js/customerManageSystem.js" defer></script>
+    <title>Restaurant Management System</title>
 </head>
 
 <body>
@@ -33,21 +36,23 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown"> <span class="nav-link"> News <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="news.html">New</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
                         <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="menu.html">Munu</a></li>
+                            <li class="dropdown-item"><a href="menu.html">Menu</a></li>
                             <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signOut.html">Sign out</a></li>
+                    <li class="nav-item dropdown"> <span class="nav-link"> Member <i class="ti-angle-down"></i></span>
+                        <ul class="dropdown-menu last">
+                            <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
+                            <span id="logoutBtn">
+                                <li class="dropdown-item"><a href="index.html">Sign out</a></li>
+                            </span>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -55,7 +60,7 @@
     <!-- Slider -->
     <header class="header slider-fade">
         <div class="owl-carousel owl-theme">
-            <!-- img slider 0 ~ 9 -->
+            <!-- img slider 資料夾-->
             <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/2.jpg">
                 <div class="v-middle caption">
                     <div class="container">
@@ -135,6 +140,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quae eos aspernatur minima eaque
                         labore, blanditiis possimus ullam odio, laudantium voluptate temporibus tenetur inventore quia
                         necessitatibus eligendi harum neque magnam.</p>
+                    <br>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5758684845187!2d120.23659197504249!3d23.039340079162088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7747c27fc4c5%3A0x8f336b40888d840!2z5Y-w5Y2X5oeJ55So56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1670920815389!5m2!1szh-TW!2stw"
                         width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
@@ -150,7 +156,7 @@
             </div>
         </div>
     </section>
-    <!-- Facilties -->
+    <!--店家服務-->
     <section class="facilties section-padding">
         <div class="container">
             <div class="row">
@@ -164,40 +170,36 @@
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-world"></span>
                         <h5>內用</h5>
-                        <p>We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.</p>
-                        <div class="facility-shape"> <span class="flaticon-world"></span> </div>
+                        <p>本餐廳提供最優質的餐點以及舒適的環境，讓顧客享受最美好的一天。
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-car"></span>
                         <h5>停車場</h5>
-                        <p>Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        <div class="facility-shape"> <span class="flaticon-car"></span> </div>
+                        <p>本餐廳200公尺外設有附屬停車場，結帳後可於櫃檯領取停車費用。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-bed"></span>
                         <h5>外帶</h5>
-                        <p>Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        <div class="facility-shape"> <span class="flaticon-bed"></span> </div>
+                        <p>本餐廳提供外帶自取服務，可先於點餐頁面訂餐，待餐點完成即可自取。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-wifi"></span>
                         <h5>Wifi</h5>
-                        <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        <div class="facility-shape"> <span class="flaticon-wifi"></span> </div>
+                        <p>本餐廳提供免費Wifi，若有需要可於櫃檯查看Wifi密碼。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-breakfast"></span>
-                        <h5>信用卡</h5>
+                        <h5>點數折扣</h5>
                         <p>Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant</p>
-                        <div class="facility-shape"> <span class="flaticon-breakfast"></span> </div>
                     </div>
                 </div>
             </div>
