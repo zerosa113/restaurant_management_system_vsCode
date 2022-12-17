@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
@@ -17,13 +16,6 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader-bg"></div>
-    <div id="preloader">
-        <div id="preloader-status">
-            <div class="preloader-position loader"> <span></span> </div>
-        </div>
-    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -76,53 +68,76 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <!-- 登入系統 -->
-    <div class="wrap">
-        <fieldset>
-            <legend>登入資訊</legend>
-            <br>
-            <!-- required 必須填寫 -->
-            <!-- placeholder提示訊息 -->
-            <h3>帳號</h3>
-            <form action="/memberInformation.html" method="get">
-                <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
-                    aria-label="Text input with segmented dropdown button" required />
-                <br>
-                <br>
-                <h3>密碼</h3>
-                <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
-                    aria-label="Text input with segmented dropdown button" required />
-                <br>
-                <br>
-                <input type="submit" id="loginBtn" value="登入" required />
-                <span class="border border-3">
-                    <li class="nav-item-sign"><a class="nav-link" href="signUp.html">點此註冊帳號</a></li>
-                </span>
 
-            </form>
-        </fieldset>
+    <!-- 登入系統 -->
+    <div class="container-fluid">
+        <div class="row login-sec">
+            <!-- col-8從左到右8格 offset-2置中左右留2 -->
+            <div class="col-8 offset-2 login-sec">
+                <legend class="signLine">登入資訊</legend>
+                <br>
+                <!-- required 必須填寫 -->
+                <!-- placeholder提示訊息 -->
+                <form>
+                    <h4>帳號</h4>
+                    <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
+                        aria-label="Text input with segmented dropdown button" required />
+                    <br>
+                    <br>
+                    <h4>密碼</h4>
+                    <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
+                        aria-label="Text input with segmented dropdown button" required />
+                    <br>
+                    <br>
+                    <input type="submit" id="loginBtn" value="登入" required />
+                    <span class="border border-3">
+                        <li class="nav-item-sign"><a class="nav-link" href="signUp.html">點此註冊帳號</a></li>
+                    </span>
+
+                </form>
+            </div>
+
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">關於餐廳</h3>
+                            <p class="footer-about-text">以家為出發的料理，嚴選當令食材，
+                                搭配西式手法料理，以滿足全家大小口味的多樣選擇，
+                                拉近全家人的美味關係。</p>
+                        </div>
                     </div>
                     <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">搜索</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="index.html">首頁 HOME</a></li>
+                                <li><a href="news.html">推播 NEWS</a></li>
+                                <li><a href="menu.html">菜單 MENU</a></li>
+                                <li><a href="orders.html">點餐 ORDERS</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 ">
                         <div class="footer-column footer-contact">
+                            <h3 class="footer-title">聯絡我們</h3>
+                            <p class="footer-contact-text">710台南市永康區中正路529號<br>No.529, Zhongzheng Rd., Yongkang
+                                District, Tainan City 710302, Taiwan (R.O.C.)
+                            </p>
+                            <div class="footer-contact-info">
+                                <p class="footer-contact-phone"><span class="flaticon-call"></span> 06-1234567</p>
+                                <p class="footer-contact-mail">arashi11031228@gmail.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
@@ -150,7 +165,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/YouTubePopUp.js"></script>
     <script src="js/select2.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/smooth-scroll.min.js"></script>

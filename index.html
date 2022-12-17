@@ -5,14 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="./js/function/customerFunction.js" defer></script>
-    <script src="./js/customerManageSystem.js" defer></script>
+    <!-- script js寫下面 網站樣式讀取會比較快 -->
+    <!-- <script src="./js/function/customerFunction.js" defer></script>
+    <script src="./js/customerManageSystem.js" defer></script> -->
     <title>Restaurant Management System</title>
+    <!-- Icon Library 星星 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -35,7 +40,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
@@ -66,13 +70,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <span>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                </span>
+                                <!-- icon 星星 -->
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
                                 <h4>Best Restaurant</h4>
                                 <h1>Enjoy a Luxury Experience</h1>
                             </div>
@@ -85,13 +88,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <span>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                </span>
+                                <!-- icon 星星 -->
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
                                 <h4>Unique Place to Relax & Enjoy</h4>
                                 <h1>The Perfect Base For You</h1>
                             </div>
@@ -104,13 +106,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <span>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                </span>
+                                <!-- icon 星星 -->
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
+                                <span><a class="fa fa-star orange" href=""></a></span>
                                 <h4>The Ultimate Luxury Experience</h4>
                                 <h1>Enjoy The Best Moments of Life</h1>
                             </div>
@@ -124,40 +125,36 @@
     <section class="about section-padding">
         <div class="container">
             <div class="row">
+                <!-- 浮出動畫class= "animate-box" data-animate-effect="fadeInUp" -->
                 <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
                     <span>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
-                        <i class="star-rating"></i>
+                        <a class="fa fa-star orange" href=""></a>
+                        <a class="fa fa-star orange" href=""></a>
+                        <a class="fa fa-star orange" href=""></a>
+                        <a class="fa fa-star orange" href=""></a>
+                        <a class="fa fa-star orange" href=""></a>
                     </span>
                     <div class="section-subtitle">享受奢華的一天</div>
                     <div class="section-title">米奇零餐廳</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique illum pariatur
-                        exercitationem culpa dignissimos aliquid unde harum neque omnis, distinctio modi qui provident
-                        consequuntur autem ad hic incidunt atque.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quae eos aspernatur minima eaque
-                        labore, blanditiis possimus ullam odio, laudantium voluptate temporibus tenetur inventore quia
-                        necessitatibus eligendi harum neque magnam.</p>
-                    <br>
+                    <p class="miChiLi col-10 mb-10">
+                        米奇零因顧客而生存，有了顧客，我們才能永續經營，顧客的光臨對我們是莫大的恩惠，顧客有恩於我們，我們也要對他們心存感恩、心懷感謝、善解、寬容看待。
+                        優質服務源自良好的互動，為顧客多想一點，因為讓我們的恩人感到快樂，恩人就會樂於與我們有「好合作」，最後服務才會有「好結果」，甚至幫我們傳播好的口碑。</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5758684845187!2d120.23659197504249!3d23.039340079162088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7747c27fc4c5%3A0x8f336b40888d840!2z5Y-w5Y2X5oeJ55So56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1670920815389!5m2!1szh-TW!2stw"
-                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        section-padding="20px" width="300" height="200" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30">
+                    <img src="img/about/6.jpg" alt="" class="mt-90 mb-30">
                 </div>
                 <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/2.jpg" alt="">
+                    <img src="img/about/2.jpg" alt="">
                 </div>
-
             </div>
         </div>
     </section>
     <!--店家服務-->
-    <section class="facilties section-padding">
+    <section class="facilties ">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -169,8 +166,8 @@
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-world"></span>
-                        <h5>內用</h5>
-                        <p>本餐廳提供最優質的餐點以及舒適的環境，讓顧客享受最美好的一天。
+                        <h5>新鮮食材</h5>
+                        <p>本餐廳嚴選新鮮蔬果及肉品，提供最優質的餐點以及舒適的環境。
                         </p>
                     </div>
                 </div>
@@ -199,7 +196,7 @@
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-breakfast"></span>
                         <h5>點數折扣</h5>
-                        <p>Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant</p>
+                        <p>會員可透過消費累積點數，點數可兌換各種折扣或優惠商品。</p>
                     </div>
                 </div>
             </div>
@@ -209,17 +206,41 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">關於餐廳</h3>
+                            <p class="footer-about-text">以家為出發的料理，嚴選當令食材，
+                                搭配西式手法料理，以滿足全家大小口味的多樣選擇，
+                                拉近全家人的美味關係。</p>
+                        </div>
                     </div>
                     <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">搜索</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="index.html">首頁 HOME</a></li>
+                                <li><a href="news.html">推播 NEWS</a></li>
+                                <li><a href="menu.html">菜單 MENU</a></li>
+                                <li><a href="orders.html">點餐 ORDERS</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 ">
                         <div class="footer-column footer-contact">
+                            <h3 class="footer-title">聯絡我們</h3>
+                            <p class="footer-contact-text">710台南市永康區中正路529號<br>No.529, Zhongzheng Rd., Yongkang
+                                District, Tainan City 710302, Taiwan (R.O.C.)
+                            </p>
+                            <div class="footer-contact-info">
+                                <p class="footer-contact-phone"><span class="flaticon-call"></span> 06-1234567</p>
+                                <p class="footer-contact-mail">arashi11031228@gmail.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
@@ -233,6 +254,9 @@
             </div>
         </div>
     </footer>
+    <!-- js -->
+    <script src="./js/function/customerFunction.js" defer></script>
+    <script src="./js/customerManageSystem.js" defer></script>
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
@@ -247,10 +271,10 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/YouTubePopUp.js"></script>
     <script src="js/select2.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <!-- 動畫樣式 -->
     <script src="js/custom.js"></script>
 </body>
 

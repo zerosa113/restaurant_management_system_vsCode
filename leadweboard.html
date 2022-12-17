@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
@@ -16,19 +15,6 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader-bg"></div>
-    <div id="preloader">
-        <div id="preloader-status">
-            <div class="preloader-position loader"> <span></span> </div>
-        </div>
-    </div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -47,7 +33,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
                     <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
@@ -61,7 +46,7 @@
                         <ul class="dropdown-menu last">
                             <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
                             <span id="logoutBtn">
-                                <li class="dropdown-item"><a>Sign out</a></li>
+                                <li class="dropdown-item"><a href="index.html">Sign out</a></li>
                             </span>
                         </ul>
                     </li>
@@ -92,53 +77,41 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4">
                         <div class="footer-column footer-about">
-                            <h3 class="footer-title">About Hotel</h3>
-                            <p class="footer-about-text">Welcome to the best five-star deluxe hotel in New York. Hotel
-                                elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat.</p>
-
-                            <div class="footer-language"> <i class="lni ti-world"></i>
-                                <select onchange="location = this.value;">
-                                    <option value="#0">English</option>
-                                    <option value="#0">German</option>
-                                </select>
-                            </div>
+                            <h3 class="footer-title">關於餐廳</h3>
+                            <p class="footer-about-text">以家為出發的料理，嚴選當令食材，
+                                搭配西式手法料理，以滿足全家大小口味的多樣選擇，
+                                拉近全家人的美味關係。</p>
                         </div>
                     </div>
                     <div class="col-md-3 offset-md-1">
                         <div class="footer-column footer-explore clearfix">
-                            <h3 class="footer-title">Explore</h3>
+                            <h3 class="footer-title">搜索</h3>
                             <ul class="footer-explore-list list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="menu.html">Menu</a></li>
-                                <li><a href="orders.html">Orders</a></li>
-                                <li><a href="about.html">About Restaurant</a></li>
+                                <li><a href="index.html">首頁 HOME</a></li>
+                                <li><a href="news.html">推播 NEWS</a></li>
+                                <li><a href="menu.html">菜單 MENU</a></li>
+                                <li><a href="orders.html">點餐 ORDERS</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 ">
                         <div class="footer-column footer-contact">
-                            <h3 class="footer-title">Contact</h3>
-                            <p class="footer-contact-text">1616 Broadway NY, New York 10001<br>United States of America
+                            <h3 class="footer-title">聯絡我們</h3>
+                            <p class="footer-contact-text">710台南市永康區中正路529號<br>No.529, Zhongzheng Rd., Yongkang
+                                District, Tainan City 710302, Taiwan (R.O.C.)
                             </p>
                             <div class="footer-contact-info">
-                                <p class="footer-contact-phone"><span class="flaticon-call"></span> 855 100 4444</p>
-                                <p class="footer-contact-mail">info@luxuryhotel.com</p>
-                            </div>
-                            <div class="footer-about-social-list">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                                <a href="#"><i class="ti-twitter"></i></a>
-                                <a href="#"><i class="ti-youtube"></i></a>
-                                <a href="#"><i class="ti-facebook"></i></a>
-                                <a href="#"><i class="ti-pinterest"></i></a>
+                                <p class="footer-contact-phone"><span class="flaticon-call"></span> 06-1234567</p>
+                                <p class="footer-contact-mail">arashi11031228@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
@@ -166,7 +139,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/YouTubePopUp.js"></script>
     <script src="js/select2.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/smooth-scroll.min.js"></script>

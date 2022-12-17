@@ -861,7 +861,7 @@ blockquote cite:before {
 
 /* ======= Section style ======= */
 .section-padding {
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .section-padding2 {
@@ -1240,7 +1240,6 @@ blockquote cite:before {
     padding: 15px;
     background-color: #fff;
 }
-}
 
 
 /* ======= Header style ======= */
@@ -1375,11 +1374,12 @@ hr {
     z-index: 9;
 }
 
+/* slider切換圖片按鈕 */
 /* slider-fade owl-nav next and prev */
 .slider-fade .owl-nav {
-    position: absolute;
-    bottom: 7%;
-    right: 12%;
+    /* position: absolute; */
+    /* bottom: 7%;
+    right: 12%; */
 }
 
 .slider-fade .owl-prev {
@@ -5241,11 +5241,10 @@ button.mfp-arrow {
 
 .footer-explore-list li a:hover {
     padding-left: 15px;
-    color: #aa8453);
+    color: #aa8453;
 }
 
 .footer-explore-list li a:before {
-    position: absolute;
     top: 55%;
     left: 0;
     bottom: 0;
@@ -5314,7 +5313,7 @@ button.mfp-arrow {
 }
 
 .footer-contact-mail:before {
-    position: absolute;
+    /* position: absolute;
     bottom: 9px;
     left: 0;
     right: 0;
@@ -5322,7 +5321,7 @@ button.mfp-arrow {
     background-color: #aa8453;
     content: "";
     -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
+    transition: all 500ms ease; */
 }
 
 .footer-contact-mail:hover:before {
@@ -5791,4 +5790,28 @@ select {
     }
 
 
+}
+
+
+/* ------------------- */
+/* 米奇零介紹 */
+.miChiLi {
+    margin-bottom: 60px;
+}
+
+/* 登入系統 */
+.login-sec {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* 登入註冊文字底線 */
+.signLine {
+    border-bottom: 1px rgb(57, 57, 57) solid;
+    padding-bottom: 5px;
+}
+
+/* silder星星 */
+.orange {
+    color: orange;
 }
