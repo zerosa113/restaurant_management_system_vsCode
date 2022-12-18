@@ -22,46 +22,53 @@
 
 <body>
     <!-- <?php echo $i;?> 為php連接後端的語法 -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-wrapper navbar-brand valign">
-                <a href="index.html">
-                    <div class="logo">
-                        <img src="img/logo.png" class="logo-img" alt="">
-                    </div>
-                </a>
+
+    <div class="navHeader ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo-wrapper navbar-brand valign">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="img/logo.png" class="logo-img" alt="">
+                        </div>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
+                        <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
+                            <ul class="dropdown-menu last">
+                                <li class="dropdown-item"><a href="menu.html">Menu</a></li>
+                                <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                        <li class="nav-item dropdown"> <span class="nav-link"> Member <i
+                                    class="ti-angle-down"></i></span>
+                            <ul class="dropdown-menu last">
+                                <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
+                                <span id="logoutBtn">
+                                    <li class="dropdown-item"><a href="index.html">Sign out</a></li>
+                                </span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="icon-bar"><i class="ti-line-double"></i></span> </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signIn.html">Sign in & Sign up</a></li>
-                    <li class="nav-item dropdown"> <span class="nav-link"> Menu <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="menu.html">Menu</a></li>
-                            <li class="dropdown-item"><a href="leadweboard.html">Leadweboard</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
-                    <li class="nav-item dropdown"> <span class="nav-link"> Member <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="memberInformation.html">Information</a></li>
-                            <span id="logoutBtn">
-                                <li class="dropdown-item"><a href="index.html">Sign out</a></li>
-                            </span>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
     <!-- Slider -->
+    <!-- 可用.fadeInUp 上移動畫 animate.min.js -->
     <header class="header slider-fade">
         <div class="owl-carousel owl-theme">
             <!-- img slider 資料夾-->
@@ -76,8 +83,8 @@
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
-                                <h4>Best Restaurant</h4>
-                                <h1>Enjoy a Luxury Experience</h1>
+                                <h4>最好的餐廳</h4>
+                                <h1>The Best Restaurant</h1>
                             </div>
                         </div>
                     </div>
@@ -94,8 +101,8 @@
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
-                                <h4>Unique Place to Relax & Enjoy</h4>
-                                <h1>The Perfect Base For You</h1>
+                                <h4>能夠放鬆和享受的獨特場所</h4>
+                                <h1>Unique Place to Relax & Enjoy</h1>
                             </div>
                         </div>
                     </div>
@@ -112,8 +119,8 @@
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
                                 <span><a class="fa fa-star orange" href=""></a></span>
-                                <h4>The Ultimate Luxury Experience</h4>
-                                <h1>Enjoy The Best Moments of Life</h1>
+                                <h4>極致奢華體驗</h4>
+                                <h1>The Ultimate Luxury Experience</h1>
                             </div>
                         </div>
                     </div>
@@ -126,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <!-- 浮出動畫class= "animate-box" data-animate-effect="fadeInUp" -->
-                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                <div class="col-md-6 mb-30 ">
                     <span>
                         <a class="fa fa-star orange" href=""></a>
                         <a class="fa fa-star orange" href=""></a>
@@ -144,10 +151,10 @@
                         section-padding="20px" width="300" height="200" style="border:0;" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+                <div class="col col-md-3 ">
                     <img src="img/about/6.jpg" alt="" class="mt-90 mb-30">
                 </div>
-                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+                <div class="col col-md-3 ">
                     <img src="img/about/2.jpg" alt="">
                 </div>
             </div>
@@ -164,7 +171,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                    <!-- 浮出動畫class= "animate-box" data-animate-effect="fadeInUp" -->
+                    <div class="single-facility">
                         <span class="flaticon-world"></span>
                         <h5>新鮮食材</h5>
                         <p>本餐廳嚴選新鮮蔬果及肉品，提供最優質的餐點以及舒適的環境。
@@ -172,28 +180,28 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                    <div class="single-facility">
                         <span class="flaticon-car"></span>
                         <h5>停車場</h5>
                         <p>本餐廳200公尺外設有附屬停車場，結帳後可於櫃檯領取停車費用。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                    <div class="single-facility">
                         <span class="flaticon-bed"></span>
                         <h5>外帶</h5>
                         <p>本餐廳提供外帶自取服務，可先於點餐頁面訂餐，待餐點完成即可自取。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                    <div class="single-facility">
                         <span class="flaticon-wifi"></span>
                         <h5>Wifi</h5>
                         <p>本餐廳提供免費Wifi，若有需要可於櫃檯查看Wifi密碼。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                    <div class="single-facility">
                         <span class="flaticon-breakfast"></span>
                         <h5>點數折扣</h5>
                         <p>會員可透過消費累積點數，點數可兌換各種折扣或優惠商品。</p>

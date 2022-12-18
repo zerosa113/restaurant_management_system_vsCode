@@ -75,28 +75,27 @@
             <!-- col-8從左到右8格 offset-2置中左右留2 -->
             <div class="col-8 offset-2 login-sec">
                 <legend class="signLine">登入資訊</legend>
-                <br>
                 <!-- required 必須填寫 -->
                 <!-- placeholder提示訊息 -->
-                <form>
-                    <h4>帳號</h4>
-                    <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
-                        aria-label="Text input with segmented dropdown button" required />
-                    <br>
-                    <br>
-                    <h4>密碼</h4>
-                    <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
-                        aria-label="Text input with segmented dropdown button" required />
-                    <br>
-                    <br>
-                    <input type="submit" id="loginBtn" value="登入" required />
-                    <span class="border border-3">
-                        <li class="nav-item-sign"><a class="nav-link" href="signUp.html">點此註冊帳號</a></li>
-                    </span>
+                <div class="row pt-5 col">
+                    <form>
+                        <h4>帳號</h4>
+                        <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
+                            aria-label="Text input with segmented dropdown button" required />
+                        <br>
+                        <h4>密碼</h4>
+                        <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
+                            aria-label="Text input with segmented dropdown button" required />
+                        <br>
+                        <br>
+                        <input type="submit" id="loginBtn" value="登入" required />
+                        <span class="border border-3">
+                            <li class="nav-item-sign"><a class="nav-link" href="signUp.html">點此註冊帳號</a></li>
+                        </span>
 
-                </form>
+                    </form>
+                </div>
             </div>
-
         </div>
     </div>
     <!-- Footer -->

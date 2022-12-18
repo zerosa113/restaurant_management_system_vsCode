@@ -951,7 +951,8 @@ blockquote cite:before {
     color: #fff;
 }
 
-.nav-scroll {
+/* 導覽列下拉 */
+/* .nav-scroll {
     background: #fff;
     padding: 0 0 0 0;
     position: fixed;
@@ -966,7 +967,7 @@ blockquote cite:before {
     transform: translateY(100px);
     -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-}
+} */
 
 .nav-scroll .icon-bar {
     color: #aa8453;
@@ -1257,6 +1258,7 @@ blockquote cite:before {
     font-size: 30px;
 }
 
+/* 上移動畫 -webkit-animation-delay、animation-delay */
 .header .caption span i.star-rating {
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
@@ -1267,6 +1269,7 @@ blockquote cite:before {
     ;
     font-size: 15px;
     font-weight: 400;
+    /* 文字大寫uppercase */
     text-transform: uppercase;
     letter-spacing: 6px;
     color: #fff;
@@ -1278,6 +1281,7 @@ blockquote cite:before {
 }
 
 .header .caption h1 {
+    /* 對應上層div位置 */
     position: relative;
     margin-bottom: 20px;
     font-family: 'Gilda Display', serif;
@@ -1356,6 +1360,7 @@ hr {
 
 /* ======= Slider-fade style (Homepage Slider) ======= */
 .slider-fade .owl-item {
+    /* 滿版高度vh 滿版寬度vw */
     height: 100vh;
     position: relative;
 }
@@ -1382,13 +1387,14 @@ hr {
     right: 12%; */
 }
 
+/* slider左右按鈕
 .slider-fade .owl-prev {
     float: left;
 }
 
 .slider-fade .owl-next {
     float: right;
-}
+} */
 
 .slider-fade .owl-theme .owl-nav [class*=owl-] {
     width: 40px;
@@ -1418,6 +1424,7 @@ hr {
     }
 }
 
+/* slider 1/2/3 圖片切換 */
 /* owl-dots for slider */
 .slider-fade .owl-dots {
     position: absolute;
@@ -1430,6 +1437,7 @@ hr {
     width: 40px;
     text-align: right !important
 }
+
 
 .slider-fade .owl-dots:after {
     position: absolute;
@@ -3055,7 +3063,7 @@ hr.border-2 {
     }
 }
 
-
+/* index提供服務 */
 /* ======= Facilties style ======= */
 .facilties .single-facility {
     background: transparent;
@@ -5815,3 +5823,14 @@ select {
 .orange {
     color: orange;
 }
+
+/* memberInfo */
+.faceImg {
+    width: 50;
+}
+
+/* 導覽列color */
+/* .navHeader {
+    color: #FFF;
+    background-color: orange;
+} */

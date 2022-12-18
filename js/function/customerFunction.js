@@ -31,6 +31,38 @@ function login(strAccount, strPwd) {
     })
 }
 
+// function showLogin() {
+
+//     $.ajax({
+//         url: 'http://localhost:8080/show_login_account',
+//         method: 'POST',
+//         contentType: 'application/json',
+//         dataType: 'json',
+//         data: JSON.stringify(),
+//         success: function (res) {
+
+//             let { message } = res
+
+//             if (message === '尚未登入') {
+//                 alert('尚未登入')
+//                 window.location.href = 'login.html'
+//             } else {
+//                 $('#showLogin').empty()
+//                 $('#showLogin').append(`<p>${message}</p>`)
+//             }
+//         }, xhrFields: {
+//             withCredentials: true
+//         },
+//         error: function (e) {
+//             console.log(e)
+//             alert('Failed')
+//         }
+
+//     })
+
+
+// }
+
 function logout() {
 
     $.ajax({
@@ -81,6 +113,46 @@ function signUp(strAccount, strPwd, strName, strPhone, intAge, strLineId, strEma
                 alert('註冊成功，請登入')
                 window.location.href = 'signIn.html'
             }
+        }, xhrFields: {
+            withCredentials: true
+        },
+        error: function (e) {
+            console.log(e)
+            alert('Failed')
+        },
+    })
+}
+
+function searchMemberInfo(strAccount) {
+    let objPostData = { memberAccount: strAccount }
+
+    $.ajax({
+        url: 'http://localhost:8080/search_member_info',
+        method: 'POST',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: JSON.stringify(objPostData),
+        success: function (res) {
+
+            let { message, list } = res
+
+            if (message === '尚未登入') {
+                alert('尚未登入')
+                window.location.href = 'signIn.html'
+            } else if (message === '尚無購買紀錄') {
+                alert('尚無購買紀錄')
+            } else if (message === 'Success') {
+                alert('Success')
+
+                $('#memberInfoTable').empty()
+                $('#memberInfoTable').append(`<tr><th>帳號</th><th>姓名</th><th>電話</th><th>年齡</th><th>LineId</th><th>點數</th></tr>`)
+
+                for (let members of list) {
+                    $('#memberInfoTable').append(`<tr><td>${members.memberAccount}</td><td>${members.memberName}</td><td>${members.phone}</td><td>${members.ageRange}</td><td>${members.lineId}</td><td>${members.points}</td></tr>`)
+                }
+
+            }
+
         }, xhrFields: {
             withCredentials: true
         },
