@@ -1,4 +1,4 @@
-$(document).on('click', '#signUpBtn', function (e) {
+$(document).on('click', '#memberSignUpBtn', function (e) {
     e.preventDefault()
 
     let strAccount = $('#account').val()
@@ -8,6 +8,8 @@ $(document).on('click', '#signUpBtn', function (e) {
     let intAge = $('#age').val()
     let strLineId = $('#lineId').val()
     let strEmail = $('#email').val()
+    console.log(strAccount)
+    console.log(strPwd)
 
     if (strAccount == '' || strPwd == '' || strName == '' || strPhone == '') {
         alert('請輸入必填項目')
