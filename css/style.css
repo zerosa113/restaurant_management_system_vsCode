@@ -5834,3 +5834,27 @@ select {
     color: #FFF;
     background-color: orange;
 } */
+
+.totalPrice {
+    /* position: absolute; */
+
+    background-color: rgb(255, 250, 235);
+    flex-direction: row-reverse;
+    z-index: 1;
+    float: right;
+}
+
+.btn-col-md-4 {
+    flex-direction: row-reverse;
+}
+
+/* #totP {
+    width: 240px;
+    height: 280px;
+    text-align: center;
+    line-height: 280px;
+    font-size: 15px;
+    color: #ab8a62;
+    font-weight: bold;
+    float: left;
+} */
