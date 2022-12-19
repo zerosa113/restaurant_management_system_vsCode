@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/function/customerFunction.js" defer></script>
     <script src="./js/customerManageSystem.js" defer></script>
-    <title>leadweboard</title>
+    <script src="./js/function/ordersFunctions.js" defer></script>
+    <script src="./js/orders.js" defer></script>
+    <title>Orders</title>
 </head>
 
 <body>
@@ -54,22 +56,56 @@
             </div>
         </div>
     </nav>
-    <!-- Spa-Wellness Slider -->
-    <header class="header slider">
-        <div class="owl-carousel owl-theme">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/spa/3.jpg"></div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/spa/1.jpg"></div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/spa/2.jpg"></div>
+
+    <!-- Restaurant Order Title -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4"
+        data-background="img/spa/3.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 caption mt-90">
+                    <h5>MiChiLin</h5>
+                    <h1>Orders</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Main-->
+    <div class="container mt-5">
+        <!-- MenuTitle and CheckoutBtn -->
+        <div class="container">
+            <br />
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="card card-sm">
+                        <div class="card-body row no-gutters align-items-center">
+                            <div class="col">
+                                <h3>Menus</h3>
+                            </div>
+                            <div class="col-auto ml-1">
+                                <button class="btn btn-lg btn-info" id="btnCheckout" type="submit">Checkout</button>
+                                <button class="btn btn-lg btn-warning" id="btnRemoveAll" type="submit">Remove
+                                    All</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </header>
-    <!-- Spa-Wellness Content -->
-    <section class="rooms-page section-padding" data-scroll-index="1">
-        <div>
-
+        <!-- Menu List -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="card-columns" id="menuInfo">
+                        <!-- Menu Item -->
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -108,7 +144,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+
         </div>
         <div class="footer-bottom">
             <div class="container">
