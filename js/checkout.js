@@ -8,7 +8,7 @@ $(document).on('click', '#checkoutBtn', function (e) {
     e.preventDefault()
 
     checkout()
-    removeShoppingCart()
+    // removeShoppingCart()
 })
 
 $(document).on('click', '#shopCartTest', function (e) {
