@@ -282,7 +282,39 @@ function showShoppingCart() {
         },
         error: function (e) {
             console.log(e)
-            alert('Failed')
+            // alert('Failed')
+            console.log('Failed showShoppingCart')
         },
     })
+}
+
+function readPointsExchange() {
+
+    $.ajax({
+        url: 'http://localhost:8080/readPointsExchange',
+        method: 'POST',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: JSON.stringify(),
+        success: function (res) {
+            let list = res
+
+            $('#readPointsExchangeTable').empty()
+            $('#readPointsExchangeTable').append(`<tr><th>名稱</th><th>消費點數</th><th>折扣</th></tr>`)
+
+            for (let points of list) {
+                $('#readPointsExchangeTable').append(`<tr><td>${points.pointName}</td><td>${points.pointsCost}</td><td>${points.discount}</td></tr>`)
+            }
+
+        }, xhrFields: {
+            withCredentials: true
+        },
+        error: function (e) {
+            console.log(e)
+            alert('Failed')
+        }
+
+    })
+
+
 }

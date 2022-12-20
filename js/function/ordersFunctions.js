@@ -35,6 +35,9 @@ function getAllMenu() {
                 `)
             }
 
+        }
+        , xhrFields: {
+            withCredentials: true
         },
         error: function (e) {
             console.log(e)
@@ -56,11 +59,16 @@ function shoppingCart(listOrderInfoMap) {
             if (message === '購物車為空') {
 
             }
+            window.location.href = 'memberCheckout.html'
+
             let p = totalPrice
             console.log(p)
             console.log("Sucess")
 
 
+        }
+        , xhrFields: {
+            withCredentials: true
         },
         error: function (e) {
             console.log(e)
