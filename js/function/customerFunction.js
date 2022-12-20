@@ -318,3 +318,31 @@ function readPointsExchange() {
 
 
 }
+
+function removeShoppingCart() {
+
+    $.ajax({
+        url: 'http://localhost:8080/remove_shopping_cart',
+        method: 'POST',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: JSON.stringify({
+
+        }),
+        success: function (CustomerRes) {
+            let { message } = CustomerRes
+            let res = message
+            console.log('Success removeShoppingCart')
+            alert(res)
+        }
+        , xhrFields: {
+            withCredentials: true
+        },
+        error: function (e) {
+            console.log(e)
+            alert('Failed removeShoppingCart')
+        }
+
+    })
+
+}

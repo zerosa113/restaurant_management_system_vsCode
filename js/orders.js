@@ -11,6 +11,8 @@ $(document).on('click', 'button[id*=addToShoppingcart]', function (e) {
     commodityName = $(this).siblings().attr('id')
     quantity = parseInt($(this).siblings().val())
     listOrderInfoMap[commodityName] = quantity
+    alert('Success Add')
+
     console.log(listOrderInfoMap)
 })
 
@@ -26,6 +28,7 @@ $(document).on('click', 'button[id*=btnCheckout]', function (e) {
 $(document).on('click', 'button[id*=btnRemoveAll]', function (e) {
     e.preventDefault()
     listOrderInfoMap = {}
+    removeShoppingCart()
     console.log(listOrderInfoMap)
 })
 
