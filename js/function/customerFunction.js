@@ -155,6 +155,9 @@ function searchMemberInfo(strAccount) {
 
                 $('#memberInfoTable').append(`<tr><td>${memberInfo.memberAccount}</td><td>${memberInfo.memberName}</td><td>${memberInfo.phone}</td><td>${memberInfo.ageRange}</td><td>${memberInfo.points}</td></tr>`)
 
+                // new add
+                $('#memberOrdersTable').empty()
+
 
                 $('#memberOrdersTable').append(`<tr><th>訂單資訊</th><th>金額</th><th>訂單日期</th><th>訂單狀態</th></tr>`)
                 for (let item of orders) {
@@ -185,8 +188,8 @@ function searchMemberInfo(strAccount) {
     })
 }
 
-function checkout(strAccount, strPwd) {
-    let objPostData = { memberAccount: strAccount, memberPwd: strPwd }
+function checkout(intcostPoints) {
+    let objPostData = { costPoints: intcostPoints }
 
     $.ajax({
         url: 'http://localhost:8080/customerOrder',
@@ -214,8 +217,8 @@ function checkout(strAccount, strPwd) {
     })
 }
 
-function shoppingCart() {
-    let mapOrderMap = { 'beef': 3, 'fish': 4 }
+function shoppingCart(mapOrderMap) {
+    // let mapOrderMap = { 'beef': 3, 'fish': 4 }
     let objPostData = { orderInfoMap: mapOrderMap }
 
     $.ajax({
