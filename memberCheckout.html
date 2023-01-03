@@ -118,26 +118,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input class="form-control form-control form-control-borderless m-1" id="costPoints"
-                                type="number" placeholder="輸入消費點數">
-                            <button type="button" id="checkoutBtn" class="btn btn-danger">結帳</button>
-                            <button type="button" id="pointsExchangeBtn" class="btn btn btn-success"
-                                href=".html">點數兌換</button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 兌換項目 -->
-    <div class="container mb-5">
-        <div class="row ml-4">
-            <div id="readPointsExchange">
+    <!-- 兌換項目、會員資訊、點數兌換與結帳 -->
+    <div class="container mt-2 mb-5">
+        <div class="row">
+            <div class="col-6" id="readPointsExchange">
                 <legend>點數兌換項目</legend>
                 <table id="readPointsExchangeTable" class="salesVolume-table"></table>
+            </div>
+
+            <div class="col-6">
+                <div id="memberInfo">
+                    <table id="memberInfoTable">
+                        <legend>會員資訊</legend>
+                    </table>
+                </div>
+
+                <div class="mt-5">
+                    <legend>點數兌換與結帳</legend>
+                    <input class="form-control form-control form-control-borderless m-1" id="costPoints" type="number"
+                        placeholder="輸入消費點數" min="0">
+                    <button type="button" id="checkoutBtn" class="btn btn-danger">結帳</button>
+                    <button type="button" id="pointsExchangeBtn" class="btn btn btn-success" href=".html">點數兌換</button>
+                </div>
+
             </div>
         </div>
     </div>
