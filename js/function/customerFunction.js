@@ -147,7 +147,7 @@ function searchMemberInfo(strAccount) {
 
                 $('#memberInfoTable').append(`<tr><td>${memberInfo.memberAccount}</td><td>${memberInfo.memberName}</td><td>${memberInfo.phone}</td><td>${memberInfo.ageRange}</td><td>${memberInfo.points}</td></tr>`)
             } else if (message === 'Success') {
-                alert('Success')
+                // alert('Success')
 
                 $('#memberInfoTable').empty()
                 $('#memberInfoTable').append(`<tr><th>帳號</th><th>姓名</th><th>電話</th><th>年齡</th><th>點數</th></tr>`)
