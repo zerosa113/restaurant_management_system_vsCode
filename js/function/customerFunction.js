@@ -147,7 +147,7 @@ function searchMemberInfo(strAccount) {
 
                 $('#memberInfoTable').append(`<tr><td>${memberInfo.memberAccount}</td><td>${memberInfo.memberName}</td><td>${memberInfo.phone}</td><td>${memberInfo.ageRange}</td><td>${memberInfo.points}</td></tr>`)
             } else if (message === 'Success') {
-                alert('Success')
+                // alert('Success')
 
                 $('#memberInfoTable').empty()
                 $('#memberInfoTable').append(`<tr><th>帳號</th><th>姓名</th><th>電話</th><th>年齡</th><th>點數</th></tr>`)
@@ -263,21 +263,24 @@ function showShoppingCart() {
             if (message === '購物車為空') {
                 alert('購物車為空')
             } else {
-                alert('Success')
+                // alert('Success')
 
                 $('#shopCart').empty()
 
                 $.each(orderInfoMap, function (key, value) {
-                    $('#shopCart').append(`<div  class="col-md-12">
-                <div class="single-facility">
-                        <p>餐點: ${key} 數量: ${value}</p> 
+                    $('#shopCart').append(`
+                    <div class="col-md-12">
+                        <div class="single-facility">
+                            <p>餐點: ${key} 數量: ${value}</p> 
+                        </div>
                     </div>
-                </div>`)
+                `)
                 })
                 $('#shopCartTotal').append(`
                 <div class="single-facility">
                     <p>總金額: ${totalPrice}</p>                    
-                                    </div>`)
+                </div>
+                `)
 
             }
         }, xhrFields: {
@@ -348,4 +351,71 @@ function removeShoppingCart() {
 
     })
 
+}
+
+function memberPointInfo(strAccount) {
+    let objPostData = { memberAccount: strAccount }
+
+    $.ajax({
+        url: 'http://localhost:8080/search_member_info',
+        method: 'POST',
+        contentType: 'application/json',
+        dataType: 'json',
+        data: JSON.stringify(objPostData),
+        success: function (res) {
+
+            let { message, memberInfo, orders } = res
+
+            if (message === '尚未登入') {
+                alert('尚未登入')
+                window.location.href = 'signIn.html'
+            } else if (message === '尚無購買紀錄') {
+                alert('尚無購買紀錄')
+                $('#memberInfoTable').empty()
+                $('#memberInfoTable').append(`
+                <tr>
+                    <th>帳號</th>
+                    <th>姓名</th>
+                    <th>點數</th>
+                </tr>
+                `)
+
+                $('#memberInfoTable').append(`
+                <tr>
+                    <td>${memberInfo.memberAccount}</td>
+                    <td>${memberInfo.memberName}</td>
+                    <td id="memberInfoPoints">${memberInfo.points}</td>
+                </tr>
+                `)
+            } else if (message === 'Success') {
+                // alert('Success')
+
+                $('#memberInfoTable').empty()
+                $('#memberInfoTable').append(`
+                <tr>
+                    <th>帳號</th>
+                    <th>姓名</th>
+                    <th>點數</th>
+                </tr>
+                `)
+
+
+                $('#memberInfoTable').append(`
+                <tr>
+                    <td>${memberInfo.memberAccount}</td>
+                    <td>${memberInfo.memberName}</td>
+                    <td id="memberInfoPoints">${memberInfo.points}</td>
+                </tr>
+                `)
+
+            }
+
+        }, xhrFields: {
+            withCredentials: true
+        },
+        error: function (e) {
+            console.log(e)
+            alert('Failed')
+        },
+    })
 }
