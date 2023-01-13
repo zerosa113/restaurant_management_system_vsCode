@@ -14,6 +14,9 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
     if (strAccount == '' || strPwd == '' || strName == '' || strPhone == '') {
         alert('請輸入必填項目')
         return
+    } else if (intAge < 1) {
+        alert('請填寫正確年齡')
+        return
     }
 
     signUp(strAccount, strPwd, strName, strPhone, intAge, strLineId, strEmail)
