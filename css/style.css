@@ -855,13 +855,9 @@ blockquote cite:before {
     }
 }
 
-
-
-
-
 /* ======= Section style ======= */
 .section-padding {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 .section-padding2 {
@@ -5858,3 +5854,34 @@ select {
     font-weight: bold;
     float: left;
 } */
+
+
+/* 註冊文字排版 */
+.signUpWord {
+    font-size: 15pt;
+    color: rgb(29, 29, 29);
+}
+
+.signUp-form1 {
+    position: relative;
+}
+
+.signUp-form2 {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+}
+
+#memberSignUpBtn:hover {
+    background-color: rgb(255, 203, 62);
+    color: #8e6d45;
+}
+
+/* 驗證 */
+input.valid {
+    border: 2px solid green;
+}
+
+input.invalid {
+    border: 2px solid red;
+}

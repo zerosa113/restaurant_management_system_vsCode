@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
@@ -73,44 +73,45 @@
             <!-- <div class="col-8 offset-4 login-sec"> -->
 
             <div class="container">
-                <form>
+                <form class="signUp-form">
                     <legend class="signLine ">註冊帳號</legend><br><br>
-                    <!--未確認 <form action="/memberInformation.html" method="get"> -->
-                    <div class="col-6">
+                    <!--未確認 <form action="/memberInformation.html" method="post"> -->
+                    <div class="signUp-form1 col-5">
 
-                        <h4>帳號</h4>
+                        <legend class="signUpWord">帳號(必填)</legend>
                         <input id="account" type="text" name="userEmployCode" size="50" placeholder="請輸入帳號"
                             aria-label="Text input with segmented dropdown button" required />
                         <br>
-                        <h4>密碼</h4>
+                        <legend class="signUpWord">密碼(必填)</legend>
                         <input id="pwd" type="password" name="userpassword" size="50" placeholder="請輸入密碼 "
                             aria-label="Text input with segmented dropdown button" required />
                         <br>
-                        <h4>姓名</h4>
+                        <legend class="signUpWord">姓名(必填)</legend>
                         <input id="name" type="text" name="userName" size="50" placeholder="請輸入姓名 "
                             aria-label="Text input with segmented dropdown button" required />
                         <br>
-                        <h4>電話</h4>
-                        <input id="phone" type="text" name="userPhone" size="50" placeholder="請輸入電話 "
-                            pattern="09\d{2}-\d{3}-\d{3}" aria-label="Text input with segmented dropdown button"
+                        <legend class="signUpWord">手機(必填)</legend>
+                        <input id="phone" type="text" name="userPhone" size="50" placeholder="請輸入手機號碼 (例:0912345678)"
+                            pattern="09\d{8}" maxlength="10" aria-label="Text input with segmented dropdown button"
                             required />
                         <br>
                     </div>
-                    <div class="col-6">
+                    <div class="signUp-form2 col-4">
 
-                        <h4>年齡</h4>
+                        <legend class="signUpWord">年齡</legend>
                         <input id="age" type="text" name="userAge" size="50" placeholder="請輸入年齡 "
                             aria-label="Text input with segmented dropdown button" />
                         <br>
-                        <h4>LineID</h4>
+                        <legend class="signUpWord">LineID</legend>
                         <input id="lineId" type="text" name="userLine" size="50" placeholder="請輸入LineID "
                             aria-label="Text input with segmented dropdown button" />
                         <br>
-                        <h4>Email</h4>
-                        <input id="email" type="text" name="userEmail" size="50" placeholder="請輸入email "
+                        <legend class="signUpWord">Email</legend>
+                        <input id="email" type="email" name="userEmail" size="50"
+                            placeholder="請輸入email (例:abc@mail.com)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             aria-label="Text input with segmented dropdown button" />
                         <br>
-                        <input type="submit" id="memberSignUpBtn" value="註冊" />
+                        <button><input type="submit" id="memberSignUpBtn" value="註冊" /></button>
                         <span class="border border-3">
                             <li class="nav-item-sign"><a class="nav-link" href="signIn.html">點此登入</a></li>
                         </span>

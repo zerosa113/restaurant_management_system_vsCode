@@ -11,13 +11,31 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
     console.log(strAccount)
     console.log(strPwd)
 
+    index = strEmail.indexOf('@', 0)
+    var age = document.getElementById("age")
+    var phone = document.getElementById("phone")
+    var email = document.getElementById("email")
+
     if (strAccount == '' || strPwd == '' || strName == '' || strPhone == '') {
         alert('請輸入必填項目')
         return
-    } else if (intAge < 1) {
-        alert('請填寫正確年齡')
+    } else if (intAge != '' && intAge < 1) {
+        alert('請填寫正確歲數')
+        $('#age').toggleClass('invalid')
+        return
+    } else if (strPhone.length < 10) {
+        alert('請填寫正確手機號碼')
+        age.classList.remove('invalid')
+        $('#phone').toggleClass('invalid')
+        return
+    } else if (index == -1 || index == 0 || index == email.length - 1) {
+        alert('請填寫正確的信箱格式')
+        phone.classList.remove('invalid')
+        $('#email').toggleClass('invalid')
         return
     }
+
+    email.classList.remove('invalid')
 
     signUp(strAccount, strPwd, strName, strPhone, intAge, strLineId, strEmail)
 })
