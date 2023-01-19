@@ -5173,7 +5173,7 @@ button.mfp-arrow {
     position: relative;
     display: block;
     background-color: #222;
-    padding: 90px 0 60px 0;
+    padding: 60px 0 60px 0;
     z-index: 1;
 }
 
@@ -5855,6 +5855,11 @@ select {
     float: left;
 } */
 
+/* 登入按鈕 */
+#loginBtn:hover {
+    background-color: rgb(255, 203, 62);
+    color: #8e6d45;
+}
 
 /* 註冊文字排版 */
 .signUpWord {
@@ -5869,12 +5874,17 @@ select {
 .signUp-form2 {
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 79.7%;
 }
 
 #memberSignUpBtn:hover {
     background-color: rgb(255, 203, 62);
     color: #8e6d45;
+}
+
+.btnGroup {
+    position: absolute;
+    left: 40%;
 }
 
 /* 驗證 */

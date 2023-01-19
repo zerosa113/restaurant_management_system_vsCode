@@ -3,6 +3,7 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
 
     let strAccount = $('#account').val()
     let strPwd = $('#pwd').val()
+    let strPwdCheck = $('#confirmPassword').val()
     let strName = $('#name').val()
     let strPhone = $('#phone').val()
     let intAge = $('#age').val()
@@ -17,13 +18,19 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
     var phone = document.getElementById("phone")
     var email = document.getElementById("email")
 
-    if (strAccount == '' || strPwd == '' || strName == '' || strPhone == '') {
+    if (strAccount == '' || strPwd == '' || strPwdCheck == '' || strName == '' || strPhone == '') {
         alert('請輸入必填項目')
         return
+
+    } else if (strPwd != strPwdCheck) {
+        alert('密碼不吻合')
+        return
+
     } else if (intAge != '' && intAge < 1) {
         alert('請填寫正確歲數')
         $('#age').toggleClass('invalid')
         return
+
     } else if (strPhone.length < 10) {
         alert('請填寫正確手機號碼')
         age.classList.remove('invalid')
@@ -31,7 +38,7 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
         return
 
         // 必須包含@、@之前不可為空字串、@之後不可為空字串
-    } else if (index == -1 || index == 0 || index == email.length - 1) {
+    } else if (intAge != '' && index == -1 || intAge != '' && index == 0 || intAge != '' && index == email.length - 1) {
         alert('請填寫正確的信箱格式')
         phone.classList.remove('invalid')
         $('#email').toggleClass('invalid')
