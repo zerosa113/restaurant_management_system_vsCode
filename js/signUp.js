@@ -11,6 +11,7 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
     console.log(strAccount)
     console.log(strPwd)
 
+    // 尋找 @ 的位置，0 代表開始尋找的起始位置
     index = strEmail.indexOf('@', 0)
     var age = document.getElementById("age")
     var phone = document.getElementById("phone")
@@ -28,6 +29,8 @@ $(document).on('click', '#memberSignUpBtn', function (e) {
         age.classList.remove('invalid')
         $('#phone').toggleClass('invalid')
         return
+
+        // 必須包含@、@之前不可為空字串、@之後不可為空字串
     } else if (index == -1 || index == 0 || index == email.length - 1) {
         alert('請填寫正確的信箱格式')
         phone.classList.remove('invalid')
